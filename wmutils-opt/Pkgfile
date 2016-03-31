@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/$branch
 	else
-		git clone https://github.com/wildefyr/opt -b $branch $name
+		git clone https://github.com/wmutils/opt -b $branch $name
 		cd $name
 	fi
 
