@@ -1,0 +1,24 @@
+# Description: An SSL VPN client.
+# URL:         http://infradead.org/openconnect
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libxm12 openssl pkg-config vpnc zlib
+
+name=openconnect
+version=7.06
+release=1
+source=(ftp://ftp.infradead.org/pub/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	PYTHON=/usr/bin/python2
+	./configure --prefix=/usr \
+				--bindir=/usr/bin \
+				--mandir=/usr/share/man \
+				--disable-static
+
+	make
+	make DESTDIR=$PKG install
+
+}

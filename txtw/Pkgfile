@@ -1,0 +1,24 @@
+# Description: Return the pixel width of the given strings for the given font
+# URL:         https://github.com/baskerville/txtw
+# Packager:    wildefyr, me at wildefyr dot net
+# Depends on:  cairo
+
+name=txtw
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard $branch
+	else
+		git clone https://github.com/baskerville/txtw -b $branch $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+}

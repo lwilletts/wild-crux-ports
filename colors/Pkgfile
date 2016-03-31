@@ -1,0 +1,26 @@
+# Description: Extract colors from pictures. (git checkout)
+# URL:         http://git.2f30.org/colors/log.html
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git libpng
+
+name=colors
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone git://git.2f30.org/colors.git -b $branch $name
+		cd $name
+	fi
+
+	make
+	install -Dm 755 "colors" $PKG/usr/bin/colorextract
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+}

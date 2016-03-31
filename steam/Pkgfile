@@ -1,0 +1,24 @@
+# Description: The Steam gaming platform by Valve.
+# URL:         http://store.steampowered.com/
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xdg-utils mesa3d-32 dbus
+# Optional:    nvidia-32
+
+name=steam
+version=1.0.0.51
+release=1
+source=(\
+http://repo.steampowered.com/steam/archive/precise/${name}_${version}.tar.gz \
+alsa.patch)
+
+build() {
+	cd $name
+
+	patch -p1 -i "$SRC/alsa.patch"
+
+	install -Dm755 steam                             $PKG/usr/bin/steam
+	install -Dm644 steam.6                           $PKG/usr/share/man/man6/steam.6
+	install -Dm644 bootstraplinux_ubuntu12_32.tar.xz $PKG/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz
+	ln -s /bin/true                                  $PKG/usr/bin/steamdeps
+}

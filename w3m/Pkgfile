@@ -1,0 +1,63 @@
+# Description: Text-based web browser. (git checkout)
+# URL:         https://github.com/shinh/w3m
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git boehm-gc
+
+name=w3m
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/shinh/w3m -b $branch $name
+		cd $name
+	fi
+
+	# broken code is broken
+    sed -i s/showaudio/mplayer/ config.h.in
+    sed -i '836d' main.c # function type is void
+    sed -i 's/file_handle/file_foo/' istream.{c,h}
+
+	./configure --prefix=/usr \
+				--libexecdir=/usr/lib \
+				--mandir=/usr/share/man \
+				--enable-image \
+				--with-gc \
+				# --disable-gopher \
+				# --disable-japanese \
+				# --disable-m17n \
+				# --disable-messagel10n \
+				# --disable-nls \
+				# --disable-nntp \
+				# --disable-unicode \
+				# --disable-xface \
+				# --enable-alarm \
+				# --enable-ansi-color \
+				# --enable-bgcolor \
+				# --enable-color \
+				# --enable-cookie \
+				# --enable-dict \
+				# --enable-digest-auth \
+				# --enable-external-uri-loader \
+				# --enable-help-cgi \
+				# --enable-history \
+				# --enable-ipv6 \
+				# --enable-keymap=w3m \
+				# --enable-menu \
+				# --enable-mouse \
+				# --enable-sslverify \
+				# --enable-w3mmailer \
+
+    make
+    make DESTDIR=$PKG install
+
+    rm -rf $PKG/usr/man/ja*
+    rm -rf $PKG/usr/share/locale/
+}

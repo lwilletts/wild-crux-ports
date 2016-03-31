@@ -1,0 +1,17 @@
+# Description: Independent xorg server transparency setter.
+# URL:         http://forchheimer.se/transset-df/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  xorg-libxcomposite xorg-libxrender
+
+name=transset-df
+version=6
+release=1
+source=(http://forchheimer.se/transset-df/transset-df-6.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	install -Dm755 transset-df $PKG/usr/bin/transset-df
+}

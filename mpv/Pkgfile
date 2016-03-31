@@ -1,0 +1,35 @@
+# Description: General Purpose video player based on MPlayer and mplayer2. (git checkout)
+# URL:         http://mpv.io
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git libass ffmpeg docutils python luajit
+# Optional:    libdvdread libdvdnav youtube-dl libcdio-paranoia
+
+name=mpv
+version=git
+release=3
+source=()
+
+build () {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/mpv-player/mpv $name
+		cd $name
+	fi
+
+	./bootstrap.py
+	./waf configure \
+		--prefix=/usr \
+		--confdir=/etc/mpv \
+		--enable-zsh-comp \
+		--enable-gpl3 \
+		--progress
+
+	./waf build -j$(/usr/bin/getconf _NPROCESSORS_ONLN)
+	./waf install --destdir=$PKG
+
+	rm -rf $PKG/usr/share/doc
+}

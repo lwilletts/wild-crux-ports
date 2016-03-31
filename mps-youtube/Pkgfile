@@ -1,0 +1,31 @@
+# Description: Curses interface for youtube. (git checkout)
+# URL:         https://github.com/mps-youtube/mps-youtube
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python3 setuptools pafy
+
+name=mps-youtube
+version=git
+release=1
+source=()
+branch=develop
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/mps-youtube/mps-youtube -b $branch $name
+		cd $name
+	fi
+
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr \
+		--root=$PKG \
+		--optimize=1 \
+		--skip-build
+
+	find $PKG -type f -perm -o=w -exec chmod o-w {} +
+}

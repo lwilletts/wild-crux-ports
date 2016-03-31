@@ -1,0 +1,44 @@
+
+README for nvidia 1xx.xx
+
+
+
+*** NOTE for nvidia with udev ***
+
+If using udev, add your user to the "video" group to be able to
+use the nvidia devices required for 3d to function properly.
+
+
+*** NOTE for users of legacy hardware ***
+
+Before installing this port, take a look at the Legacy GPU list on
+nvidia's site: http://www.nvidia.com/object/IO_32667.html
+
+If your hardware is supported by either the 1.0-96xx or 1.0-71xx
+driver series, install the corresponding port instead of this one.
+
+
+
+POST-INSTALL
+
+Use opt/gl-select from ports to select the correct gl/glx
+libraries and extensions like so:
+
+	# gl-select use nvidia
+
+
+POST-REMOVE
+
+Use opt/gl-select from ports to revert to the xorg gl/glx libraries
+and extensions like so:
+
+	# gl-select use xorg
+
+
+When UPGRADING/DOWNGRADING the nvidia port (where the version changes),
+use gl-select to revert to xorg and then re-select nvidia in order to
+refresh the libGLcore and libGL symlinks, like so:
+
+	# prt-get update nvidia
+	# gl-select use xorg; gl-select use nvidia
+

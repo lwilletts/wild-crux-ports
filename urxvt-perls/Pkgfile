@@ -1,0 +1,26 @@
+# Description: Perl extensions for the urxvt-unicode terminal emulator. (git checkout)
+# URL:         https://github.com/muennich/urxvt-perls
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git rxvt-unicode perl
+
+name=urxvt-perls
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/muennich/urxvt-perls -b $branch $name
+		cd $name
+	fi
+
+	install -Dm 644 "clipboard" $PKG/usr/lib/urxvt/perl/clipboard
+	install -Dm 644 "url-select" $PKG/usr/lib/urxvt/perl/url-select
+	install -Dm 644 "keyboard-select" $PKG/usr/lib/urxvt/perl/keyboard-select
+}

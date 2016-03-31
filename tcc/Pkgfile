@@ -1,0 +1,20 @@
+# Description: Tiny C Compiler.
+# URL:         http://bellard.org/tcc/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=tcc
+version=0.9.26
+release=1
+source=(http://download.savannah.gnu.org/releases/tinycc/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+				--bindir=/usr/bin \
+				--mandir=/usr/share/man
+
+	make
+	make DESTDIR=$PKG install
+}

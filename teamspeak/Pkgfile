@@ -1,0 +1,46 @@
+# Description: TeamSpeak is software for quality voice communication via the Internet.
+# URL:         http://www.teamspeak.com/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=teamspeak
+version=3.0.18.2
+release=1
+source=(http://teamspeak.gameserver.gamed.de/ts3/releases/$version/TeamSpeak3-Client-linux_amd64-$version.run
+	teamspeak3.desktop
+	icon.xpm
+	teamspeak3.launcher)
+
+build() {
+	install -d archive
+	cd archive
+	sh ../TeamSpeak3-Client-linux_amd64-$version.run --tar -xf
+
+	# Delete bundled Qt libs to use system-wide ones
+#	rm libQt5*
+
+	# Fix FS#34190
+#	sed -i "/export QTDIR.*/d" ts3client_runscript.sh
+#	sed -i "/export QT_PLUGIN_PATH*/d" ts3client_runscript.sh
+
+	# Fix FS#34189
+	#rm qt.conf
+
+	# Fix permissions
+	find -type d | xargs chmod 755
+	find -type f | xargs chmod 644
+	find -name *.so | xargs chmod 755
+	chmod +x ts3client*
+
+	# install
+	install -d $PKG/{usr/bin/,opt/teamspeak3}
+	cp -r * $PKG/opt/teamspeak3/
+
+	# Install Desktop File
+	install -D -m 0644 $SRC/teamspeak3.desktop $PKG/usr/share/applications/teamspeak3.desktop
+	# Install Icon File
+	install -D -m 0644 $SRC/icon.xpm $PKG/usr/share/pixmaps/teamspeak3.xpm
+	# Install Client Launcher
+	install -D -m 0755 $SRC/teamspeak3.launcher $PKG/usr/bin/teamspeak3
+}

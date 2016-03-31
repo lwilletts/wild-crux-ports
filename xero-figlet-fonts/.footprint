@@ -1,0 +1,366 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/figlet/
+-rwxr-xr-x	root/root	usr/share/figlet/1Row.flf
+-rwxr-xr-x	root/root	usr/share/figlet/3-D.flf
+-rwxr-xr-x	root/root	usr/share/figlet/3D Diagonal.flf
+-rwxr-xr-x	root/root	usr/share/figlet/3D-ASCII.flf
+-rwxr-xr-x	root/root	usr/share/figlet/3d.flf
+-rwxr-xr-x	root/root	usr/share/figlet/3d_diagonal.flf
+-rwxr-xr-x	root/root	usr/share/figlet/3x5.flf
+-rwxr-xr-x	root/root	usr/share/figlet/4Max.flf
+-rwxr-xr-x	root/root	usr/share/figlet/5 Line Oblique.flf
+-rwxr-xr-x	root/root	usr/share/figlet/5lineoblique.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC 3 Line.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC 3 Liv1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC AAA01.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Neko.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Razor.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Razor2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Slash.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Slider.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Thin.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Tubes.flf
+-rwxr-xr-x	root/root	usr/share/figlet/AMC Untitled.flf
+-rwxr-xr-x	root/root	usr/share/figlet/ANSI Shadow.flf
+-rwxr-xr-x	root/root	usr/share/figlet/ASCII New Roman.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Acrobatic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Alligator.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Alligator2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Alpha.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Alphabet.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Arrows.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Avatar.flf
+-rwxr-xr-x	root/root	usr/share/figlet/B1FF.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Banner.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Banner3-D.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Banner3.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Banner4.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Barbwire.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Basic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bear.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bell.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Benjamin.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Big Chief.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Big Money-ne.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Big Money-nw.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Big Money-se.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Big Money-sw.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Big.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bigfig.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Binary.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Block.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Blocks.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bloody.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bolger.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Braced.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bright.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Broadway KB.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Broadway.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bubble.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Bulbhead.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Caligraphy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Caligraphy2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Calvin S.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cards.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Catwalk.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Chiseled.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Chunky.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Coinstak.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cola.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Colossal.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Computer.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Contessa.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Contrast.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cosmike.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Crawford.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Crawford2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Crazy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cricket.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cursive.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cyberlarge.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cybermedium.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cybersmall.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Cygnet.flf
+-rwxr-xr-x	root/root	usr/share/figlet/DANC4.flf
+-rwxr-xr-x	root/root	usr/share/figlet/DOS Rebel.flf
+-rwxr-xr-x	root/root	usr/share/figlet/DWhistled.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Dancing Font.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Decimal.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Def Leppard.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Delta Corps Priest 1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Diamond.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Diet Cola.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Digital.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Doh.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Doom.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Dot Matrix.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Double Shorts.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Double.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Dr Pepper.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Efti Chess.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Efti Font.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Efti Italic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Efti Piti.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Efti Robot.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Efti Wall.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Efti Water.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Electronic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Elite.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Epic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Fender.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Filter.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Fire Font-k.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Fire Font-s.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Flipped.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Flower Power.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Four Tops.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Fraktur.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Fun Face.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Fun Faces.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Fuzzy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Georgi16.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Georgia11.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Ghost.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Ghoulish.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Glenyn.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Goofy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Gothic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Graceful.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Gradient.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Graffiti.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Greek.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Heart Left.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Heart Right.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Henry 3D.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Hex.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Hieroglyphs.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Hollywood.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Horizontal Left.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Horizontal Right.flf
+-rwxr-xr-x	root/root	usr/share/figlet/ICL-1900.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Impossible.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Invita.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Isometric1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Isometric2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Isometric3.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Isometric4.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Italic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Ivrit.flf
+-rwxr-xr-x	root/root	usr/share/figlet/JS Block Letters.flf
+-rwxr-xr-x	root/root	usr/share/figlet/JS Bracket Letters.flf
+-rwxr-xr-x	root/root	usr/share/figlet/JS Capital Curves.flf
+-rwxr-xr-x	root/root	usr/share/figlet/JS Cursive.flf
+-rwxr-xr-x	root/root	usr/share/figlet/JS Stick Letters.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Jacky.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Jazmine.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Jerusalem.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Katakana.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Kban.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Keyboard.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Knob.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Konto Slant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Konto.flf
+-rwxr-xr-x	root/root	usr/share/figlet/LCD.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Larry 3D 2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Larry 3D.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Lean.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Letters.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Lil Devil.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Line Blocks.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Linux.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Lockergnome.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Madrid.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Marquee.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Maxfour.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Merlin1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Merlin2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Mike.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Mini.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Mirror.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Mnemonic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Modular.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Morse.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Morse2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Moscow.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Mshebrew210.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Muzzle.flf
+-rwxr-xr-x	root/root	usr/share/figlet/NScript.flf
+-rwxr-xr-x	root/root	usr/share/figlet/NT Greek.flf
+-rwxr-xr-x	root/root	usr/share/figlet/NV Script.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Nancyj-Fancy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Nancyj-Improved.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Nancyj-Underlined.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Nancyj.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Nipples.flf
+-rwxr-xr-x	root/root	usr/share/figlet/O8.flf
+-rwxr-xr-x	root/root	usr/share/figlet/OS2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Octal.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Ogre.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Old Banner.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Patorjk's Cheese.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Patorjk-HeX.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Pawp.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Peaks Slant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Peaks.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Pebbles.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Pepper.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Poison.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Puffy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Puzzle.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Pyramid.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Rammstein.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Rectangles.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Red Phoenix.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Relief.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Relief2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Reverse.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Roman.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Rot13.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Rotated.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Rounded.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Rowan Cap.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Rozzo.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Runic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Runyc.flf
+-rwxr-xr-x	root/root	usr/share/figlet/S Blood.flf
+-rwxr-xr-x	root/root	usr/share/figlet/SL Script.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Santa Clara.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Script.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Serifcap.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Shadow.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Shimrod.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Short.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Slant Relief.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Slant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Slide.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Caps.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Isometric1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Keyboard.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Poison.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Script.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Shadow.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Slant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small Tengwar.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Small.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Soft.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Speed.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Spliff.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stacey.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stampate.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stampatello.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Standard.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Star Strips.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Star Wars.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stellar.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stforek.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stick Letters.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stop.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Straight.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Stronger Than All.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Sub-Zero.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Swamp Land.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Swan.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Sweet.flf
+-rwxr-xr-x	root/root	usr/share/figlet/THIS.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Tanja.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Tengwar.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Term.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Test1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/The Edge.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Thick.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Thin.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Thorned.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Three Point.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Ticks Slant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Ticks.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Tiles.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Tinker-Toy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Tombstone.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Train.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Trek.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Tsalagi.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Tubular.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Twisted.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Two Point.flf
+-rwxr-xr-x	root/root	usr/share/figlet/USA Flag.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Univers.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Varsity.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Wavy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Weird.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Wet Letter.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Whimsy.flf
+-rwxr-xr-x	root/root	usr/share/figlet/Wow.flf
+-rwxr-xr-x	root/root	usr/share/figlet/alligator3.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amc3line.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amc3liv1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcaaa01.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcneko.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcrazo2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcrazor.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcslash.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcslder.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcthin.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amctubes.flf
+-rwxr-xr-x	root/root	usr/share/figlet/amcun1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/ascii_new_roman.flf
+-rwxr-xr-x	root/root	usr/share/figlet/bigchief.flf
+-rwxr-xr-x	root/root	usr/share/figlet/broadway_kb.flf
+-rwxr-xr-x	root/root	usr/share/figlet/calgphy2.flf
+-rwxr-xr-x	root/root	usr/share/figlet/cosmic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/dancingfont.flf
+-rwxr-xr-x	root/root	usr/share/figlet/defleppard.flf
+-rwxr-xr-x	root/root	usr/share/figlet/dietcola.flf
+-rwxr-xr-x	root/root	usr/share/figlet/dosrebel.flf
+-rwxr-xr-x	root/root	usr/share/figlet/dotmatrix.flf
+-rwxr-xr-x	root/root	usr/share/figlet/doubleshorts.flf
+-rwxr-xr-x	root/root	usr/share/figlet/drpepper.flf
+-rwxr-xr-x	root/root	usr/share/figlet/eftichess.flf
+-rwxr-xr-x	root/root	usr/share/figlet/eftifont.flf
+-rwxr-xr-x	root/root	usr/share/figlet/eftipiti.flf
+-rwxr-xr-x	root/root	usr/share/figlet/eftirobot.flf
+-rwxr-xr-x	root/root	usr/share/figlet/eftitalic.flf
+-rwxr-xr-x	root/root	usr/share/figlet/eftiwall.flf
+-rwxr-xr-x	root/root	usr/share/figlet/eftiwater.flf
+-rwxr-xr-x	root/root	usr/share/figlet/fire_font-k.flf
+-rwxr-xr-x	root/root	usr/share/figlet/fire_font-s.flf
+-rwxr-xr-x	root/root	usr/share/figlet/flowerpower.flf
+-rwxr-xr-x	root/root	usr/share/figlet/fourtops.flf
+-rwxr-xr-x	root/root	usr/share/figlet/funface.flf
+-rwxr-xr-x	root/root	usr/share/figlet/funfaces.flf
+-rwxr-xr-x	root/root	usr/share/figlet/heart_left.flf
+-rwxr-xr-x	root/root	usr/share/figlet/heart_right.flf
+-rwxr-xr-x	root/root	usr/share/figlet/henry3d.flf
+-rwxr-xr-x	root/root	usr/share/figlet/horizontalleft.flf
+-rwxr-xr-x	root/root	usr/share/figlet/horizontalright.flf
+-rwxr-xr-x	root/root	usr/share/figlet/kontoslant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/larry3d.flf
+-rwxr-xr-x	root/root	usr/share/figlet/lildevil.flf
+-rwxr-xr-x	root/root	usr/share/figlet/lineblocks.flf
+-rwxr-xr-x	root/root	usr/share/figlet/miniwi.flf
+-rwxr-xr-x	root/root	usr/share/figlet/ntgreek.flf
+-rwxr-xr-x	root/root	usr/share/figlet/oldbanner.flf
+-rwxr-xr-x	root/root	usr/share/figlet/peaksslant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/red_phoenix.flf
+-rwxr-xr-x	root/root	usr/share/figlet/rev.flf
+-rwxr-xr-x	root/root	usr/share/figlet/rowancap.flf
+-rwxr-xr-x	root/root	usr/share/figlet/s-relief.flf
+-rwxr-xr-x	root/root	usr/share/figlet/santaclara.flf
+-rwxr-xr-x	root/root	usr/share/figlet/sblood.flf
+-rwxr-xr-x	root/root	usr/share/figlet/slscript.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smallcaps.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smisome1.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smkeyboard.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smpoison.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smscript.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smshadow.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smslant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/smtengwar.flf
+-rwxr-xr-x	root/root	usr/share/figlet/starstrips.flf
+-rwxr-xr-x	root/root	usr/share/figlet/starwars.flf
+-rwxr-xr-x	root/root	usr/share/figlet/swampland.flf
+-rwxr-xr-x	root/root	usr/share/figlet/threepoint.flf
+-rwxr-xr-x	root/root	usr/share/figlet/ticksslant.flf
+-rwxr-xr-x	root/root	usr/share/figlet/twopoint.flf
+-rwxr-xr-x	root/root	usr/share/figlet/usaflag.flf
+-rwxr-xr-x	root/root	usr/share/figlet/wetletter.flf

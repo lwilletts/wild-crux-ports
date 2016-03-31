@@ -1,0 +1,29 @@
+# Description: Highly portable CD/DVD/BluRay command line recording software.
+# URL:         http://cdrtools.sourceforge.net/private/cdrecord.html
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=cdrtools
+version=3.02a06
+release=1
+source=(https://downloads.sourceforge.net/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd $name-3.02
+
+	sed -i 's|/opt/schily|/usr|g' DEFAULTS/Defaults.linux
+	sed -i 's|DEFINSGRP=.*|DEFINSGRP=root|' DEFAULTS/Defaults.linux
+	# install rscsi to /usr/bin instead of /usr/sbin
+	sed -i 's|INSDIR=.*|INSDIR=bin|' rscsi/Makefile
+
+	export GMAKE_NOWARN=true
+	make INS_BASE=/usr INS_RBASE=/
+
+	make DESTDIR=$PKG INS_BASE=/usr INS_RBASE=/ install
+
+	# remove junk
+	rm -rf $PKG/usr/include
+	rm -rf $PKG/usr/lib/{*.a,profiled}
+	rm -rf $PKG/usr/share/man/man3
+}

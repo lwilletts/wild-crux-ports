@@ -1,0 +1,33 @@
+# Description: Mount UDF images.
+# URL:         http://sourceforge.net/projects/linux-udf
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=udftools
+version=1.0.0b3
+release=1
+source=(http://sourceforge.net/projects/linux-udf/files/${name}/${version}/${name}-${version}.tar.gz \
+		udftools-1.0.0b3.patch \
+		gcc4-compile.patch \
+		udftools-limits.patch \
+		udftools-open_missing_mode.patch \
+		gcc5-compile-fix.patch)
+
+build() {
+	cd $name-$version
+
+	patch -p1 -i "$SRC/udftools-1.0.0b3.patch"
+	patch -p1 -i "$SRC/gcc4-compile.patch"
+	patch -p1 -i "$SRC/udftools-limits.patch"
+	patch -p0 -i "$SRC/udftools-open_missing_mode.patch"
+	patch -p0 -i "$SRC/gcc5-compile-fix.patch"
+
+	./bootstrap
+	./configure --prefix=/usr \
+				--bindir=/usr/bin \
+				--bindir=/usr/share/bin
+
+	make
+	make DESTDIR=$PKG install
+}

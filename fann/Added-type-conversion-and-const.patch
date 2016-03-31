@@ -1,0 +1,31 @@
+From 57305be68aaa2619c2ececa1a70976e64dd2d813 Mon Sep 17 00:00:00 2001
+From: Laurence Willetts <wildefur@gmail.com>
+Date: Mon, 16 Nov 2015 16:48:23 +0000
+Subject: [PATCH 2/2] Added type conversion and const.
+
+---
+ tests/fann_test_train.cpp | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/tests/fann_test_train.cpp b/tests/fann_test_train.cpp
+index bd7c0ed..c8db629 100644
+--- a/tests/fann_test_train.cpp
++++ b/tests/fann_test_train.cpp
+@@ -25,10 +25,10 @@ TEST_F(FannTestTrain, TrainSimpleIncrementalXor) {
+     neural_net net(LAYER, 3, 2, 3, 1);
+ 
+     for(int i = 0; i < 100000; i++) {
+-        net.train((fann_type[]) {0.0, 0.0}, (fann_type[]) {0.0});
+-        net.train((fann_type[]) {1.0, 0.0}, (fann_type[]) {1.0});
+-        net.train((fann_type[]) {0.0, 1.0}, (fann_type[]) {1.0});
+-        net.train((fann_type[]) {1.0, 1.0}, (fann_type[]) {0.0});
++        net.train((fann_type*) (const fann_type[]) {0.0, 0.0}, (fann_type*) (const fann_type[]) {0.0});
++        net.train((fann_type*) (const fann_type[]) {1.0, 0.0}, (fann_type*) (const fann_type[]) {1.0});
++        net.train((fann_type*) (const fann_type[]) {0.0, 1.0}, (fann_type*) (const fann_type[]) {1.0});
++        net.train((fann_type*) (const fann_type[]) {1.0, 1.0}, (fann_type*) (const fann_type[]) {0.0});
+     }
+ 
+     EXPECT_LT(net.get_MSE(), 0.01);
+-- 
+2.6.2
+

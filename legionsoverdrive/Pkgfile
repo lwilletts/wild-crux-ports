@@ -1,0 +1,24 @@
+# Description: Legions: Overdrive port using wine. (git checkout)
+# URL:         http://legionsoverdrive.com
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git wine winetricks cabextract
+
+name=legionsoverdrive
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/wildefyr/Legions-on-Unix -b $branch $name
+		cd $name
+	fi
+
+	make DESTDIR=$PKG PREFIX=/usr install
+}

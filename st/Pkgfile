@@ -1,0 +1,37 @@
+# Description: Simple terminal.
+# URL:         http://st.suckless.org/
+# Packager:    wildefyr, me at wildefyr dot net
+# Depends on:  xorg-libx11
+
+name=st
+version=0.6
+release=1
+source=(\
+	config.mk \
+	Xresources \
+	clipboard.diff \
+	hidecursor.diff \
+	scrollback.diff \
+	scrollback-mouse.diff \
+	)
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard $branch
+	else
+		git clone https://github.com/dcat/st-xresources -b $branch $name
+		cd $name
+	fi
+
+	patch -p1 -i "$SRC/clipboard.diff"
+	# patch -p1 -i "$SRC/hidecursor.diff"
+	# patch -p1 -i "$SRC/scrollback.diff"
+	# patch -p1 -i "$SRC/scrollback-mouse.diff"
+
+	cp $SRC/config.mk .
+	cp $SRC/Xresources .
+	make DESTDIR=$PKG install
+}

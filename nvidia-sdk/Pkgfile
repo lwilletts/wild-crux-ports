@@ -1,0 +1,19 @@
+# Description: NVIDIA Video Codec SDK.
+# URL:         https://developer.nvidia.com/nvidia-video-codec-sdk
+# Packager:    wildefyr, wildefur at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  nvidia unzip
+
+name=nvidia-sdk
+version=6.0.1
+release=1
+source=(https://developer.nvidia.com/video-sdk-601)
+
+build() {
+	unzip video-sdk-601
+	cd nvidia_video_sdk_${version}/Samples/common/inc
+
+	for FILE in $(find . -name "*.h"); do
+		install -Dm 644 $FILE $PKG/usr/include/$FILE
+	done
+}

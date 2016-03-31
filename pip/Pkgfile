@@ -1,0 +1,19 @@
+# Description: A tool for installing and managing Python packages.
+# URL:         http://www.pip-installer.org/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python requests setuptools
+
+name=pip
+version=8.1.1
+release=1
+source=(http://pypi.python.org/packages/source/p/$name/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr \
+		--root=$PKG
+}

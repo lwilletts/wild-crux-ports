@@ -1,0 +1,25 @@
+# Description: Lossless image format easy to parse, pipe and compress. (git checkout)
+# URL:         http://tools.suckless.org/farbfeld/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git libpng libjpeg-turbo giflib
+
+name=farbfeld
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone http://git.suckless.org/farbfeld -b $branch $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+}

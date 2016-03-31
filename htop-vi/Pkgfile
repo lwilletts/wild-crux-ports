@@ -1,0 +1,25 @@
+# Description: An interactive process viewer.
+# URL:         http://hisham.hm/htop
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  ncurses
+
+name=htop-vi
+version=1.0.3
+release=1
+source=(http://hisham.hm/htop/releases/$version/htop-$version.tar.gz)
+
+build() {
+    cd htop-$version
+
+    patch < /usr/ports/wild-crux-ports/htop-vi/vim-keybindings.patch
+    ./configure --prefix=/usr \
+				--mandir=/usr/share/man \
+				--disable-nls
+
+    make
+    make DESTDIR=$PKG install
+
+    rm -rf $PKG/usr/{include,lib}
+    rm -rf $PKG/usr/share/{applications,pixmaps,}
+}

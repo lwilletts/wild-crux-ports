@@ -1,0 +1,30 @@
+# Description: Displays information about input devices. (git checkout)
+# URL:         https://cgit.freedesktop.org/evtest/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git xorg-xrandr
+
+name=evtest
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone git://anongit.freedesktop.org/evtest -b $branch $name
+		cd $name
+	fi
+
+	autoreconf -iv
+	./configure --prefix=/usr \
+				--bindir=/usr/bin \
+				--mandir=/usr/share/man
+
+	make
+	make DESTDIR=$PKG install
+}

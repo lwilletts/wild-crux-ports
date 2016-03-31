@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxrwxr-x	root/root	usr/bin/ii
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/ii/
+-rw-r--r--	root/root	usr/share/doc/ii/CHANGES
+-rw-r--r--	root/root	usr/share/doc/ii/FAQ
+-rw-r--r--	root/root	usr/share/doc/ii/LICENSE
+-rw-r--r--	root/root	usr/share/doc/ii/README
+-rw-r--r--	root/root	usr/share/doc/ii/query.sh
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-r--r--r--	root/root	usr/share/man/man1/ii.1.gz

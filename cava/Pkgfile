@@ -1,0 +1,30 @@
+# Description: Console-based Audio Visualizer for Alsa. (git checkout)
+# URL:         https://github.com/karlstav/cava
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git fftw
+
+name=cava
+version=git
+release=2
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/karlstav/cava -b $branch $name
+		cd $name
+	fi
+
+	./autogen.sh
+	./configure --prefix=/usr \
+				--bindir=/usr/bin \
+				--mandir=/usr/share/bin
+
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}

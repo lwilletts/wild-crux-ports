@@ -1,0 +1,25 @@
+# Description: Clone of lm-sensors svn repository. (git checkout)
+# URL:         https://github.com/groeck/lm-sensors/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  Guenter Roeck, http://roeck-us.net/linux/drivers/
+# Depends on:
+
+name=lm-sensors
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/groeck/lm-sensors -b $branch $name
+		cd $name
+	fi
+
+	make all
+	make PREFIX=/usr MANDIR=/usr/share/man DESTDIR=$PKG install
+}

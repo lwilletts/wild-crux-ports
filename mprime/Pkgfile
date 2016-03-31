@@ -1,0 +1,14 @@
+# Description: Find Mersenne primes.
+# URL:         http://www.mersenne.org/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=mprime
+version=28.7
+release=1
+source=(http://www.mersenne.org/ftp_root/gimps/p95v287.linux64.tar.gz)
+
+build() {
+	install -Dm 755 ${name} $PKG/usr/bin/${name}
+}
