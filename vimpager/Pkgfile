@@ -20,6 +20,6 @@ build() {
 		cd $name
 	fi
 
-	make
-	make DESTDIR=$PKG PREFIX=/usr install
+	install -Dm 755 vimcat $PKG/usr/bin/vimcat
+	install -Dm 755 vimpager $PKG/usr/bin/vimpager
 }
