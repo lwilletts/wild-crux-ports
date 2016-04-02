@@ -27,4 +27,4 @@ make
 printf '\n'
 printf '%s\n' "Pull changes onto remote server:"
 
-ssh server "cd /builds/wildefyr.net && git pull --rebase"
+ssh server "cd /builds/wildefyr.net; git pull --rebase && make build"
