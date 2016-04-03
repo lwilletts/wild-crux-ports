@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/terminibbles
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rwxr-xr-x	root/root	usr/share/man/man1/terminibbles.1.gz
+drwxr-xr-x	root/root	usr/share/terminibbles/
+drwxr-xr-x	root/root	usr/share/terminibbles/levels/
+-rw-r--r--	root/root	usr/share/terminibbles/levels/alleys
+-rw-r--r--	root/root	usr/share/terminibbles/levels/blank
+-rw-r--r--	root/root	usr/share/terminibbles/levels/corners
+-rw-r--r--	root/root	usr/share/terminibbles/levels/filmstrip
+-rw-r--r--	root/root	usr/share/terminibbles/levels/minefield

@@ -2,5 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xcape
 drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/xcape.1.gz
+drwxr-xr-x	root/root	usr/man/share/
+drwxr-xr-x	root/root	usr/man/share/man/
+-rw-r--r--	root/root	usr/man/share/man/xcape.1

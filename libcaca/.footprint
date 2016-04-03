@@ -43,20 +43,20 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/caca/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/caca/font.pyo
 drwxr-xr-x	root/root	usr/lib/ruby/
 drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/
-drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/
--rw-r--r--	root/root	usr/lib/ruby/site_ruby/2.1/caca.rb
-drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/x86_64-linux/
--rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/x86_64-linux/caca.la
--rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.1/x86_64-linux/caca.so
-drwxr-xr-x	root/root	usr/man1/
-drwxr-xr-x	root/root	usr/man1/man1/
--rw-r--r--	root/root	usr/man1/man1/caca-config.1
-lrwxrwxrwx	root/root	usr/man1/man1/cacademo.1 -> cacafire.1
--rw-r--r--	root/root	usr/man1/man1/cacafire.1
--rw-r--r--	root/root	usr/man1/man1/cacaplay.1
--rw-r--r--	root/root	usr/man1/man1/cacaserver.1
--rw-r--r--	root/root	usr/man1/man1/cacaview.1
--rw-r--r--	root/root	usr/man1/man1/img2txt.1
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.2/
+-rw-r--r--	root/root	usr/lib/ruby/site_ruby/2.2/caca.rb
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.2/x86_64-linux/
+-rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.2/x86_64-linux/caca.la
+-rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/2.2/x86_64-linux/caca.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/libcaca/
 -rw-r--r--	root/root	usr/share/libcaca/caca.txt
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/caca-config.1.gz
+lrwxrwxrwx	root/root	usr/share/man/man1/cacademo.1.gz -> cacafire.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacafire.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacaplay.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacaserver.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacaview.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/img2txt.1.gz
