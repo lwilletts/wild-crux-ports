@@ -1,0 +1,25 @@
+# Description: Farbfeld image viewer. (git checkout)
+# URL:         http://git.2f30.org/lel/file/README.html
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git farbfeld
+
+name=lel
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone git://git.2f30.org/lel.git -b $branch $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/share/man install
+}
