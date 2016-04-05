@@ -12,14 +12,14 @@ branch=master
 build() {
 	cd $PKGMK_SOURCE_DIR
 
-		if cd $name; then
-			git fetch -q; git reset --hard origin/$branch
-		else
-			git clone https://github.com/xero/figlet-fonts -b $branch $name
-			cd $name
-		fi
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/xero/figlet-fonts -b $branch $name
+		cd $name
+	fi
 
-		for i in *.flf; do
-			install -Dm755 "$i" $PKG/usr/share/figlet/"$i"
-		done
+	for i in *.flf; do
+		install -Dm755 "$i" $PKG/usr/share/figlet/"$i"
+	done
 }
