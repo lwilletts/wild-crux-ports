@@ -21,10 +21,3 @@ cd ../
 git add ports/
 git commit -m 'ports: latest'
 git push
-
-make
-
-printf '\n'
-printf '%s\n' "Pull changes onto remote server:"
-
-ssh server "cd /builds/wildefyr.net; git pull --rebase && make build"

@@ -1,0 +1,28 @@
+# Description: Graphical tracking of Unix load averages. (git checkout)
+# URL:         https://github.com/lindes/ttyload
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git
+
+name=ttyload
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/lindes/ttyload -b $branch $name
+		cd $name
+	fi
+
+	# dumb makefile is dumb
+	sed '85s_.*_\tinstall -Dm755 ttyload $(DESTDIR)${PREFIX}/bin/ttyload_' -i Makefile
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}
