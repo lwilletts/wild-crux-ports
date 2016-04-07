@@ -1,0 +1,30 @@
+# Description: Bringing together mutt code. (git checkout)
+# URL:         https://github.com/neomutt/neomutt
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git gnutls
+
+name=neomutt
+version=git
+release=1
+source=()
+branch=neomutt
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/neomutt/neomutt -b $branch $name
+		cd $name
+	fi
+
+	autoreconf --install
+	./configure --prefix=/usr \
+				--with-gnutls \
+				--without-docdir
+
+	make
+	make DESTDIR=$PKG install
+}
