@@ -1,5 +1,6 @@
 #/bin/sh
 
+rm -rfv /builds/wildefyr.net/ports
 rsync -aq /usr/ports/wildefyr/* /builds/wildefyr.net/ports
 
 cd /builds/wildefyr.net
@@ -21,3 +22,5 @@ cd ../
 git add ports/
 git commit -m 'ports: latest'
 git push
+
+ssh server "cd /builds/wildefyr.net && git pull"
