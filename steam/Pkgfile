@@ -1,0 +1,32 @@
+# Description: Digital distribution client bootstrap package.
+# URL: http://store.steampowered.com/
+# Maintainer: Danny Rawlins, crux at romster dot me
+# Packager: Lennart Sauerbeck, devel at lennart dot sauerbeck dot org
+# Depends on: dbus-32 desktop-file-utils gtk-32 libgcrypt-32 mesa3d-32 nss-32 openal-32
+# Optional: pulseaudio-32
+
+name=steam
+version=1.0.0.52
+release=1
+source=(http://repo.steampowered.com/$name/pool/$name/s/$name/${name}_$version.tar.gz
+	alsa_sdl_audiodriver.patch)
+
+build() {
+	cd $name
+
+	patch -p1 -i $SRC/alsa_sdl_audiodriver.patch
+	
+	make DESTDIR=$PKG install
+
+	# blank steamdeps because apt-get
+	ln -sf /bin/true $PKG/usr/bin/steamdeps
+
+
+	mv $PKG/usr/lib $PKG/usr/lib32
+
+	sed \
+		-e 's|/usr/lib/$STEAMPACKAGE|/usr/lib32/$STEAMPACKAGE|' \
+		-i $PKG/usr/bin/steam
+
+	rm -r $PKG/usr/share/doc
+}
