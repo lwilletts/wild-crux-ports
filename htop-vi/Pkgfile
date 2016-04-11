@@ -5,21 +5,23 @@
 # Depends on:  ncurses
 
 name=htop-vi
-version=1.0.3
+version=2.0.1
 release=1
-source=(http://hisham.hm/htop/releases/$version/htop-$version.tar.gz)
+source=(http://hisham.hm/htop/releases/$version/htop-$version.tar.gz \
+		vi-keys.patch)
 
 build() {
-    cd htop-$version
+	cd htop-$version
 
-    patch < /usr/ports/wild-crux-ports/htop-vi/vim-keybindings.patch
-    ./configure --prefix=/usr \
+	patch -p1 -i "$SRC/vi-keys.patch"
+
+	./configure --prefix=/usr \
 				--mandir=/usr/share/man \
 				--disable-nls
 
-    make
-    make DESTDIR=$PKG install
+	make
+	make DESTDIR=$PKG install
 
-    rm -rf $PKG/usr/{include,lib}
-    rm -rf $PKG/usr/share/{applications,pixmaps,}
+	rm -rf $PKG/usr/{include,lib}
+	rm -rf $PKG/usr/share/{applications,pixmaps,}
 }
