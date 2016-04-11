@@ -1,6 +1,6 @@
 #/bin/sh
 
-rm -rfv /builds/wildefyr.net/ports
+rm -rf /builds/wildefyr.net/ports
 rsync -aq /usr/ports/wildefyr/* /builds/wildefyr.net/ports
 
 cd /builds/wildefyr.net
