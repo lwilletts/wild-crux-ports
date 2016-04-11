@@ -3,3 +3,5 @@ developer not including it within this package:
 
 $ pip install DictObject
 $ pip install luckydonald-utils
+
+You probably need a python3 pip too.
