@@ -5,7 +5,7 @@
 # Depends on:  setuptools3
 
 name=pip3
-version=7.1.2
+version=8.1.1
 release=1
 source=(http://pypi.python.org/packages/source/p/pip/pip-$version.tar.gz)
 
