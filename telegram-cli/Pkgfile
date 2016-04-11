@@ -1,0 +1,30 @@
+# Description: Read-line interface for telegram. (git checkout)
+# URL:         https://github.com/vysheng/tg
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git lua jansson libevent libconfig
+
+name=telegram-cli
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/vysheng/tg -b $branch $name
+		cd $name
+	fi
+
+	git submodule update --init --recursive
+
+	./configure
+	make
+
+	install -Dm 644 tg-server.pub $PKG/etc/telegram-cli/server.pub
+	install -Dm 755 bin/telegram-cli $PKG/usr/bin/telegram-cli
+}

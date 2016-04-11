@@ -1,0 +1,5 @@
+You need to run the following commands post-install under your user due to the
+developer not including it within this package:
+
+$ pip install DictObject
+$ pip install luckydonald-utils

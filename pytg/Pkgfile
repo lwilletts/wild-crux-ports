@@ -1,0 +1,27 @@
+# Description: Python library for communicating with telegram-cli. (git checkout)
+# URL:         https://github.com/luckydonald/pytg
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git telegram-cli python3
+
+name=pytg
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/luckydonald/pytg -b $branch $name
+		cd $name
+	fi
+
+	python3 setup.py build
+	python3 setup.py install \
+					 --prefix=/usr \
+					 --root=$PKG
+}

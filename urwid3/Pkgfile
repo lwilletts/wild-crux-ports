@@ -1,0 +1,21 @@
+# Description: A console user interface library for python.
+# URL:         http://urwid.org/
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  setuptools3
+
+name=urwid3
+version=1.3.1
+release=1
+
+source=(https://pypi.python.org/packages/source/u/urwid/urwid-$version.tar.gz)
+
+build() {
+	cd urwid-$version
+
+	python3 setup.py build
+	python3 setup.py install \
+					 --prefix=/usr \
+					 --root=$PKG \
+					 --optimize=1
+}

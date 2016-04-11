@@ -1,0 +1,27 @@
+# Description: A curses telegram client written in python. (git checkout)
+# URL:         https://github.com/Nanoseb/ncTelegram
+# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git urwid3 pytg3 python3
+
+name=nctelegram
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/Nanoseb/ncTelegram -b $branch $name
+		cd $name
+	fi
+
+	python3 setup.py build
+	python3 setup.py install \
+					--prefix=/usr \
+					--root=$PKG
+}
