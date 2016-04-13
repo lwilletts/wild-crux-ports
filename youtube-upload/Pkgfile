@@ -1,7 +1,6 @@
 # Description: Upload to youtube from the commandline. (git checkout)
 # URL:         https://github.com/tokland/youtube-upload
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git python
 
 name=youtube-upload

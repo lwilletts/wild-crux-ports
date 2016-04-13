@@ -1,6 +1,6 @@
 # Description: nVIDIA Linux Display Driver (long lived branch version)
 # URL:         http://www.nvidia.com/
-# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia
 
 name=nvidia-32

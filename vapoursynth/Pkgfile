@@ -1,7 +1,6 @@
 # Description: Video processing framework. (git checkout)
 # URL:         http://www.vapoursynth.com/
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git
 
 name=vapoursynth

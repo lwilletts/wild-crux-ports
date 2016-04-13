@@ -1,7 +1,6 @@
 # Description: TeamSpeak is software for quality voice communication via the Internet.
 # URL:         http://www.teamspeak.com/
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:
 
 name=teamspeak

@@ -1,6 +1,6 @@
 # Description: simple/suckless image-viewer
 # URL:         https://github.com/muennich/sxiv
-# Maintainer:  Maximilian Dietrich, dxm at openmailbox dot org
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  imlib2 libexif giflib
 
 name=sxiv

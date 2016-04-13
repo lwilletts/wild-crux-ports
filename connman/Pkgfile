@@ -1,7 +1,6 @@
 # Description: Wireless LAN network daemon. (git checkout)
 # URL:         https://01.org/connman
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  dbus gnutls glib openconnect openvpn vpnc wpa_supplicant
 # Optional:    pptp bluez
 

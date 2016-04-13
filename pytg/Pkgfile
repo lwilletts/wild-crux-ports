@@ -1,7 +1,6 @@
 # Description: Python library for communicating with telegram-cli. (git checkout)
 # URL:         https://github.com/luckydonald/pytg
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git telegram-cli python3
 
 name=pytg

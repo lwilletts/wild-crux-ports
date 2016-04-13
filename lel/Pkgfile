@@ -1,7 +1,6 @@
 # Description: Farbfeld image viewer. (git checkout)
 # URL:         http://git.2f30.org/lel/file/README.html
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git farbfeld
 
 name=lel

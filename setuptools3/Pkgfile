@@ -1,7 +1,6 @@
 # Description: Easily download, build, install, upgrade, and uninstall Python packages.
 # URL:         http://pypi.python.org/pypi/setuptools
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  python3
 
 name=setuptools3

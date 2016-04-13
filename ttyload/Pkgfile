@@ -1,7 +1,6 @@
 # Description: Graphical tracking of Unix load averages. (git checkout)
 # URL:         https://github.com/lindes/ttyload
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git
 
 name=ttyload

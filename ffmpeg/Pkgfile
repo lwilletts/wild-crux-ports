@@ -1,7 +1,6 @@
 # Description: Complete solution to record, convert and stream audio and video. (git checkout)
 # URL:         http://ffmpeg.org
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  gnutls lame libass libbluray libgmp libmodplug libsdl libtheora libva libvpx libxvid opencore-amr openjpeg opus rtmpdump schroedinger speex x264 x265 nvidia-sdk
 
 name=ffmpeg

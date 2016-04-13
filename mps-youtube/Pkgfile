@@ -1,7 +1,6 @@
 # Description: Curses interface for youtube. (git checkout)
 # URL:         https://github.com/mps-youtube/mps-youtube
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  python3 setuptools pafy
 
 name=mps-youtube

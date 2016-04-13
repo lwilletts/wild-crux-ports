@@ -1,7 +1,6 @@
 # Description: Create short vanity github URL's. (git checkout)
 # URL:         https://github.com/syntax-samurai/gitio
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git
 
 name=gitio

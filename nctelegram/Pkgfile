@@ -1,7 +1,6 @@
 # Description: A curses telegram client written in python. (git checkout)
 # URL:         https://github.com/Nanoseb/ncTelegram
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git python3 urwid3 pytg
 
 name=nctelegram

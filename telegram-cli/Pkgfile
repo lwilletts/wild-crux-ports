@@ -1,7 +1,6 @@
 # Description: Read-line interface for telegram. (git checkout)
 # URL:         https://github.com/vysheng/tg
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git lua jansson libevent libconfig
 
 name=telegram-cli

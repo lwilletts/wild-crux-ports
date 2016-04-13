@@ -1,7 +1,6 @@
 # Description: Displays information about input devices. (git checkout)
 # URL:         https://cgit.freedesktop.org/evtest/
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git xorg-xrandr
 
 name=evtest

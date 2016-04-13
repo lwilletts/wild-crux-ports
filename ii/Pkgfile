@@ -1,13 +1,12 @@
-# Description: Irc it, simple FIFO based IRC client. (git checkout)
+# Description: 'irc it', simple FIFO based IRC client. (git checkout)
 # URL:         http://tools.suckless.org/ii/
-# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git openssl
 
 name=ii
 version=git
 release=1
-source=(ssl.diff \
-		)
+source=(ssl.diff)
 branch=master
 
 build() {

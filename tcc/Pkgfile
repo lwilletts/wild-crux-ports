@@ -1,7 +1,6 @@
 # Description: Tiny C Compiler.
 # URL:         http://bellard.org/tcc/
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:
 
 name=tcc

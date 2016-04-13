@@ -1,7 +1,6 @@
 # Description: Highly portable CD/DVD/BluRay command line recording software.
 # URL:         http://cdrtools.sourceforge.net/private/cdrecord.html
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:
 
 name=cdrtools

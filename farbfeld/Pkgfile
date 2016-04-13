@@ -1,7 +1,6 @@
 # Description: Lossless image format easy to parse, pipe and compress. (git checkout)
 # URL:         http://tools.suckless.org/farbfeld/
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git libpng libjpeg-turbo giflib
 
 name=farbfeld

@@ -1,7 +1,6 @@
 # Description: Clone of lm-sensors svn repository. (git checkout)
 # URL:         https://github.com/groeck/lm-sensors/
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  Guenter Roeck, http://roeck-us.net/linux/drivers/
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:
 
 name=lm-sensors

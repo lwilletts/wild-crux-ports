@@ -1,6 +1,6 @@
 # Description: Xero's figlet collection. (git checkout)
 # URL:         https://github.com/xero/figlet-fonts
-# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git toilet
 
 name=xero-figlet-fonts

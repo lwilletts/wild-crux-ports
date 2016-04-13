@@ -1,6 +1,6 @@
 # Description: Optional extensions to wmutils. (git checkout)
 # URL:         https://github.com/wildefyr/opt
-# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git xorg-libxcb xorg-xinput xorg-xprop xorg-xmodmap
 
 name=wmutils-opt

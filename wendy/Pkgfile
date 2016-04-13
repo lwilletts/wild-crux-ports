@@ -1,8 +1,7 @@
 # Description: Event watcher. (git checkout)
 # URL:         http://git.z3bra.org/wendy/log.html
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git 
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  git
 
 name=wendy
 version=git

@@ -1,7 +1,6 @@
 # Description: CLI uploader for pub.iotek.org. (git checkout)
 # URL:         https://github.com/dcat/ioup
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git
 
 name=ioup

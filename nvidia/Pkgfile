@@ -1,6 +1,6 @@
 # Description: nVIDIA Linux Display Driver (long lived branch version)
 # URL:         http://www.nvidia.com/
-# Packager:    wildefyr, me at wildefyr dot net
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  gtk gl-select
 
 name=nvidia

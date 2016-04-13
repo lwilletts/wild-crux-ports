@@ -1,7 +1,6 @@
 # Description: Hexdump program written by Bram. (git checkout)
 # URL:         https://github.com/Wildefyr/xxd
-# Packager:    wildefyr, wildefur at gmail dot com
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, wildefur at gmail dot com
 # Depends on:  git
 
 name=xxd

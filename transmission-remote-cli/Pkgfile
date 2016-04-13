@@ -1,7 +1,6 @@
 # Description: Curses interface for the daemon of the BitTorrent client Transmission. (git checkout)
 # URL:         https://github.com/fagga/transmission-remote-cli
-# Packager:    wildefyr, me at wildefyr dot net
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git transmission
 
 name=transmission-remote-cli
@@ -16,10 +15,10 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/$branch
 	else
-		git clone git://github.com/fagga/transmission-remote-cli -b $branch $name
+		git clone https://github.com/fagga/transmission-remote-cli -b $branch $name
 		cd $name
 	fi
 
-	install -Dm755 transmission-remote-cli $PKG/usr/bin/transmission-remote-cli
-	install -Dm644 transmission-remote-cli.1 $PKG/usr/share/man/man1/transmission-remote-cli.1
+	install -Dm 755 transmission-remote-cli $PKG/usr/bin/transmission-remote-cli
+	install -Dm 644 transmission-remote-cli.1 $PKG/usr/share/man/man1/transmission-remote-cli.1
 }
