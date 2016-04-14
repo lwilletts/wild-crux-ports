@@ -1,7 +1,7 @@
 # Description: Curses interface for youtube. (git checkout)
 # URL:         https://github.com/mps-youtube/mps-youtube
 # Maintainer:  wildefyr, me at wildefyr dot net
-# Depends on:  python3 setuptools pafy
+# Depends on:  python3 setuptools3 youtube-dl
 
 name=mps-youtube
 version=git
@@ -21,10 +21,10 @@ build() {
 
 	/usr/bin/python3 setup.py build
 	/usr/bin/python3 setup.py install \
-		--prefix=/usr \
-		--root=$PKG \
-		--optimize=1 \
-		--skip-build
+						--prefix=/usr \
+						--root=$PKG \
+						--optimize=1 \
+						--skip-build
 
 	find $PKG -type f -perm -o=w -exec chmod o-w {} +
 }
