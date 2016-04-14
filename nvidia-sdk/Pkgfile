@@ -10,9 +10,12 @@ source=(https://developer.nvidia.com/video-sdk-601)
 
 build() {
 	unzip video-sdk-601
-	cd nvidia_video_sdk_${version}/Samples/common/inc
+	cd nvidia_video_sdk_${version}/
 
+	cd Samples/common/inc
+
+	rm -rf GL/
 	for FILE in $(find . -name "*.h"); do
-		install -Dm 644 $FILE $PKG/usr/include/nv/$FILE
+		install -Dm 644 $FILE $PKG/usr/include/$FILE
 	done
 }
