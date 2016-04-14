@@ -121,21 +121,21 @@ drwxr-xr-x	root/root	usr/include/libswscale/
 -rw-r--r--	root/root	usr/include/libswscale/version.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libavcodec.a
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.57.33.100
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so.57 -> libavcodec.so.57.33.100
--rwxr-xr-x	root/root	usr/lib/libavcodec.so.57.33.100
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.57.34.100
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so.57 -> libavcodec.so.57.34.100
+-rwxr-xr-x	root/root	usr/lib/libavcodec.so.57.34.100
 -rw-r--r--	root/root	usr/lib/libavdevice.a
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.57.0.101
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so.57 -> libavdevice.so.57.0.101
 -rwxr-xr-x	root/root	usr/lib/libavdevice.so.57.0.101
 -rw-r--r--	root/root	usr/lib/libavfilter.a
-lrwxrwxrwx	root/root	usr/lib/libavfilter.so -> libavfilter.so.6.40.102
-lrwxrwxrwx	root/root	usr/lib/libavfilter.so.6 -> libavfilter.so.6.40.102
--rwxr-xr-x	root/root	usr/lib/libavfilter.so.6.40.102
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so -> libavfilter.so.6.41.101
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so.6 -> libavfilter.so.6.41.101
+-rwxr-xr-x	root/root	usr/lib/libavfilter.so.6.41.101
 -rw-r--r--	root/root	usr/lib/libavformat.a
-lrwxrwxrwx	root/root	usr/lib/libavformat.so -> libavformat.so.57.29.101
-lrwxrwxrwx	root/root	usr/lib/libavformat.so.57 -> libavformat.so.57.29.101
--rwxr-xr-x	root/root	usr/lib/libavformat.so.57.29.101
+lrwxrwxrwx	root/root	usr/lib/libavformat.so -> libavformat.so.57.34.100
+lrwxrwxrwx	root/root	usr/lib/libavformat.so.57 -> libavformat.so.57.34.100
+-rwxr-xr-x	root/root	usr/lib/libavformat.so.57.34.100
 -rw-r--r--	root/root	usr/lib/libavresample.a
 lrwxrwxrwx	root/root	usr/lib/libavresample.so -> libavresample.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libavresample.so.3 -> libavresample.so.3.0.0
