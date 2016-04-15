@@ -1,0 +1,20 @@
+# Description: Keymap handling library for toolkits and window systems.
+# URL:         http://xkbcommon.org/
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  xorg-server
+
+name=libxkbcommon
+version=0.6.1
+release=1
+source=(https://github.com/xkbcommon/${name}/archive/xkbcommon-${version}.tar.gz)
+
+build() {
+	cd $name-xkbcommon-$version
+
+	./autogen.sh
+	./configure --prefix=/usr \
+				--mandir=/usr/share/man
+
+	make
+	make DESTDIR=$PKG install
+}
