@@ -1,0 +1,18 @@
+# Description: Pattern-matching library for Lua.
+# URL:         http://www.inf.puc-rio.br/~roberto/lpeg
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  luajit
+
+name=lua-lpeg
+version=0.12
+release=1
+source=(http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-${version}.tar.gz)
+
+build() {
+	cd lpeg-$version
+
+	make LUADIR=/usr/include/luajit lua=luajit
+
+	install -Dm755 lpeg.so $PKG/usr/lib/lua/5.1/lpeg.so
+	install -Dm644 re.lua  $PKG/usr/share/lua/5.1/re.lua
+}

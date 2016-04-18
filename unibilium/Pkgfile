@@ -1,0 +1,16 @@
+# Description: A terminfo parsing library.
+# URL:         https://github.com/mauke/unibilium/
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:
+
+name=unibilium
+version=1.2.0
+release=1
+source=(https://github.com/mauke/unibilium/archive/v${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	make
+	make PREFIX="/usr" DESTDIR=${PKG} install
+}

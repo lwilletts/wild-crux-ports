@@ -1,0 +1,19 @@
+# Description: Multi-platform support library with a focus on asynchronous I/O. (git checkout)
+# URL:         https://github.com/libuv/libuv
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  git
+
+name=libuv
+version=1.8.0
+release=1
+source=(https://github.com/libuv/libuv/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./autogen.sh
+	./configure
+
+	make
+	make DESTDIR=$PKG prefix=/usr install 
+}

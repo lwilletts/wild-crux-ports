@@ -1,0 +1,23 @@
+# Description: Easy processing of keyboard entry from terminal-based programs. (git checkout)
+# URL:         https://github.com/neovim/libtermkey
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  git unibilium
+
+name=libtermkey
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/neovim/libtermkey $name
+		cd $name
+	fi
+
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}
