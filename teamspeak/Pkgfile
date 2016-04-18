@@ -1,4 +1,4 @@
-# Description: TeamSpeak is software for quality voice communication via the Internet.
+# Description: Teamspeak VoIP client.
 # URL:         http://www.teamspeak.com/
 # Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:
@@ -7,24 +7,18 @@ name=teamspeak
 version=3.0.19
 release=1
 source=(http://teamspeak.gameserver.gamed.de/ts3/releases/$version/TeamSpeak3-Client-linux_amd64-$version.run
-	teamspeak3.desktop
-	icon.xpm
-	teamspeak3.launcher)
+		teamspeak3.desktop
+		icon.xpm
+		teamspeak3.launcher)
 
 build() {
 	install -d archive
 	cd archive
 	sh ../TeamSpeak3-Client-linux_amd64-$version.run --tar -xf
 
-	# Delete bundled Qt libs to use system-wide ones
-#	rm libQt5*
-
-	# Fix FS#34190
-#	sed -i "/export QTDIR.*/d" ts3client_runscript.sh
-#	sed -i "/export QT_PLUGIN_PATH*/d" ts3client_runscript.sh
-
-	# Fix FS#34189
-	#rm qt.conf
+	# fix fs#34190
+	sed -i "/export QTDIR.*/d" ts3client_runscript.sh
+	sed -i "/export QT_PLUGIN_PATH*/d" ts3client_runscript.sh
 
 	# Fix permissions
 	find -type d | xargs chmod 755
@@ -36,10 +30,10 @@ build() {
 	install -d $PKG/{usr/bin/,opt/teamspeak3}
 	cp -r * $PKG/opt/teamspeak3/
 
-	# Install Desktop File
+	# install desktop file
 	install -D -m 0644 $SRC/teamspeak3.desktop $PKG/usr/share/applications/teamspeak3.desktop
-	# Install Icon File
+	# install icon file
 	install -D -m 0644 $SRC/icon.xpm $PKG/usr/share/pixmaps/teamspeak3.xpm
-	# Install Client Launcher
+	# install client launcher
 	install -D -m 0755 $SRC/teamspeak3.launcher $PKG/usr/bin/teamspeak3
 }
