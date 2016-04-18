@@ -1,0 +1,23 @@
+# Description: Patched dmenu with xywh support. (git checkout)
+# URL:         https://github.com/toolpunk/dmenu-ee
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  git xorg-libxft xorg-libxinerama
+
+name=dmenu-ee
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/toolpunk/dmenu-ee
+		cd $name
+	fi
+
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}
