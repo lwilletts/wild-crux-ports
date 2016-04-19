@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/w3m
+lrwxrwxrwx	root/root	usr/bin/w3mingdisplay -> /usr/lib/w3m/w3mimgdisplay
 -rwxr-xr-x	root/root	usr/bin/w3mman
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/w3m/

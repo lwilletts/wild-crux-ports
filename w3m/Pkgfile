@@ -20,43 +20,42 @@ build() {
 	fi
 
 	# broken code is broken
-    sed -i s/showaudio/mplayer/ config.h.in
-    sed -i '836d' main.c # function type is void
-    sed -i 's/file_handle/file_foo/' istream.{c,h}
+	sed -i s/showaudio/mplayer/ config.h.in
+	sed -i '836d' main.c # function type is void
+	sed -i 's/file_handle/file_foo/' istream.{c,h}
 
 	./configure --prefix=/usr \
-				--libexecdir=/usr/lib \
 				--mandir=/usr/share/man \
+				--libexecdir=/usr/lib \
 				--enable-image \
 				--with-gc \
-				# --disable-gopher \
-				# --disable-japanese \
-				# --disable-m17n \
-				# --disable-messagel10n \
-				# --disable-nls \
-				# --disable-nntp \
-				# --disable-unicode \
-				# --disable-xface \
-				# --enable-alarm \
-				# --enable-ansi-color \
-				# --enable-bgcolor \
-				# --enable-color \
-				# --enable-cookie \
-				# --enable-dict \
-				# --enable-digest-auth \
-				# --enable-external-uri-loader \
-				# --enable-help-cgi \
-				# --enable-history \
-				# --enable-ipv6 \
-				# --enable-keymap=w3m \
-				# --enable-menu \
-				# --enable-mouse \
-				# --enable-sslverify \
-				# --enable-w3mmailer \
+				--enable-dict \
+				--enable-menu \
+				--enable-mouse \
+				--enable-color \
+				--enable-cookie \
+				--enable-gopher \
+				--enable-bgcolor \
+				--enable-history \
+				--enable-help-cgi \
+				--enable-sslverify \
+				--enable-ansi-color \
+				--enable-digest-auth \
+				--enable-keymap=lynx \
+				--enable-external-uri-loader \
+				--disable-nls \
+				--disable-ipv6 \
+				--disable-nntp \
+				--disable-xface \
+				--disable-japanese \
+				--disable-w3mmailer \
+				--disable-messagel10n \
 
-    make
-    make DESTDIR=$PKG install
+	make
+	make DESTDIR=$PKG install
 
-    rm -rf $PKG/usr/man/ja*
-    rm -rf $PKG/usr/share/locale/
+	ln -s /usr/lib/w3m/w3mimgdisplay $PKG/usr/bin/w3mingdisplay
+
+	rm -rf $PKG/usr/man/ja*
+	rm -rf $PKG/usr/share/locale/
 }
