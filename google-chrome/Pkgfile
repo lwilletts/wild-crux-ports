@@ -1,21 +1,23 @@
-# Description: Modern binary internet browser.
+# Description: Google chrome binary.
 # URL:         http://chrome.google.com
 # Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  gtk gconf nss cups libexif
 
 name=google-chrome
-version=stable_current_amd64
+version=unstable
 release=1
-source=(https://dl.google.com/linux/direct/google-chrome-$version.deb)
+source=(https://dl.google.com/linux/direct/${name}-${version}_current_amd64.deb)
 
 build() {
-	bsdcpio -i < $SRC/$name-$version.deb
+	bsdcpio -i < $SRC/${name}-${version}_current_amd64.deb
 	bsdtar -xpf $SRC/data.tar.xz -C $PKG
+
+	gzip $PKG/usr/share/man/man1/google-chrome-${version}.1
+
+	ln -s $PKG/usr/bin/${name}-${version} $PKG/usr/bin/${name}
 
 	rm -r $PKG/usr/share/doc \
 		  $PKG/usr/share/applications \
 		  $PKG/usr/share/gnome-control-center \
 		  $PKG/etc/cron.daily
-
-	gzip $PKG/usr/share/man/man1/google-chrome.1
 }
