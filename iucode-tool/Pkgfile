@@ -1,10 +1,10 @@
-# Description: Microcode updater for intel i686 and x86_64 system processors for the linux kernel. (git checkout)
+# Description: Microcode updater for intel i686 and x86_64 for the linux kernel.
 # URL:         https://gitlab.com/groups/iucode-tool
 # Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:
 
 name=iucode-tool
-version=1.5
+version=1.5.1
 release=1
 source=(https://gitlab.com/$name/releases/raw/master/${name}_${version}.tar.xz)
 
@@ -17,5 +17,4 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-
 }
