@@ -1,4 +1,4 @@
-# Description: Abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator - neovim fork
+# Description: Library implementation of VT220/xterm/ECMA-48 emulators.
 # URL:         https://github.com/neovim/libvterm
 # Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git
