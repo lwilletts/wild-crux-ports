@@ -1,4 +1,4 @@
-# Description: Google chrome binary.
+# Description: Google chrome unstable binary.
 # URL:         http://chrome.google.com
 # Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  gtk gconf nss cups libexif
