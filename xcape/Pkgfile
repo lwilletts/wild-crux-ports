@@ -1,4 +1,4 @@
-# Description: Linux utility to configure modifier keys to act as other keys when pressed and released on their own. (git checkout)
+# Description: Modify a key's function on press and hold. (git checkout)
 # URL:         https://github.com/alols/xcape
 # Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git xorg-libx11 xorg-libxtst xorg-libxi
