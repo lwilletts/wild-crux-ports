@@ -12,8 +12,8 @@ build() {
 	cd $name-$version
 
 	./configure --prefix=/usr \
-				pixmapdir= \
-				desktopdir \
+				--pixmapdir= \
+				--desktopdir \
 
 	make
 	make DESTDIR=$PKG install
