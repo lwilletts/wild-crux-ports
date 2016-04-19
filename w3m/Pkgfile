@@ -54,7 +54,7 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	ln -s /usr/lib/w3m/w3mimgdisplay $PKG/usr/bin/w3mingdisplay
+	ln -s /usr/lib/w3m/w3mimgdisplay $PKG/usr/bin/w3mimgdisplay
 
 	rm -rf $PKG/usr/man/ja*
 	rm -rf $PKG/usr/share/locale/
