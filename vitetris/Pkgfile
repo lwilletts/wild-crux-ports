@@ -1,0 +1,22 @@
+# Description: Terminal-based tetris clone.
+# URL:         http://www.victornils.net/tetris/
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:
+
+name=vitetris
+version=0.57
+release=1
+source=(http://www.victornils.net/tetris/vitetris-0.57.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+				pixmapdir= \
+				desktopdir \
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}
