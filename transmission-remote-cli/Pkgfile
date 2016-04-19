@@ -1,4 +1,4 @@
-# Description: Curses interface for the daemon of the BitTorrent client Transmission. (git checkout)
+# Description: Ncurses interface for transmission. (git checkout)
 # URL:         https://github.com/fagga/transmission-remote-cli
 # Maintainer:  wildefyr, me at wildefyr dot net
 # Depends on:  git transmission
