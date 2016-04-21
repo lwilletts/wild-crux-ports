@@ -1,0 +1,25 @@
+# Description: Pretty system information script. (git checkout)
+# URL:         https://github.com/dylanaraps/neofetch
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:
+
+name=neofetch
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/dylanaraps/neofetch.git -b $branch $name
+		cd $name
+	fi
+
+	install -Dm 755 ${name} $PKG/usr/bin/${name}
+	gzip < ${name}.1 > ${name}.1.gz
+	install -Dm 644 ${name}.1.gz $PKG/usr/share/man/man1/${name}.1.gz
+}
