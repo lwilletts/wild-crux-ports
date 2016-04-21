@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dvtm
+-rwxr-xr-x	root/root	usr/bin/dvtm-status
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/dvtm.1.gz
+drwxr-xr-x	root/root	usr/share/terminfo/
+drwxr-xr-x	root/root	usr/share/terminfo/d/
+-rw-r--r--	root/root	usr/share/terminfo/d/dvtm
+-rw-r--r--	root/root	usr/share/terminfo/d/dvtm-256color
