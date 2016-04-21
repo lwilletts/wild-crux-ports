@@ -1,0 +1,24 @@
+# Description: CLI-based markdown presentation tool. (git checkout)
+# URL:         https://github.com/visit1985/mdp
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  git
+
+name=mdp
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/visit1985/mdp -b $branch $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}
