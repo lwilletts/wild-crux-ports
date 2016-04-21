@@ -14,8 +14,6 @@ build() {
 
 	gzip $PKG/usr/share/man/man1/google-chrome-${version}.1
 
-	ln -s $PKG/usr/bin/${name}-${version} $PKG/usr/bin/${name}
-
 	rm -r $PKG/usr/share/doc \
 		  $PKG/usr/share/applications \
 		  $PKG/usr/share/gnome-control-center \
