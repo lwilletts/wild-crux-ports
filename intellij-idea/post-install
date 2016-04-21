@@ -1,0 +1,1 @@
+ln -sf /opt/intellij-idea/bin/idea.sh /usr/bin/intellij-idea
