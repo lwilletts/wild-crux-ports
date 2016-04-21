@@ -1,1 +1,1 @@
-ln -sf /usr/bin/google-chrome /usr/bin/google-chrome-unstable
+ln -sf /opt/google/chrome-unstable/chrome /usr/bin/google-chrome
