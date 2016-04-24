@@ -99,7 +99,6 @@ drwxr-xr-x	root/root	opt/google/chrome-unstable/locales/
 -rwxr-xr-x	root/root	opt/google/chrome-unstable/xdg-settings
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/google-chrome-unstable -> /opt/google/chrome-unstable/google-chrome-unstable
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/

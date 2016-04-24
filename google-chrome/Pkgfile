@@ -15,7 +15,8 @@ build() {
 	gzip $PKG/usr/share/man/man1/google-chrome-${version}.1
 
 	rm -r $PKG/usr/share/doc \
+		  $PKG/etc/cron.daily \
 		  $PKG/usr/share/applications \
-		  $PKG/usr/share/gnome-control-center \
-		  $PKG/etc/cron.daily
+		  $PKG/usr/bin/${name}-${version} \
+		  $PKG/usr/share/gnome-control-center
 }
