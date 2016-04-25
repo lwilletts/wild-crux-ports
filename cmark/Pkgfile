@@ -1,0 +1,24 @@
+# Description: CommonMark parsing and rendering library and program. (git checkout)
+# URL:         http://commonmark.org/
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  cmake
+
+name=cmark
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone https://github.com/jgm/cmark -b $branch $name
+		cd $name
+	fi
+
+	make INSTALL_PREFIX=/usr
+	make DESTDIR=$PKG install
+}
