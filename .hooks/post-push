@@ -21,4 +21,6 @@ git add ports/
 git commit -m 'ports: latest'
 git push
 
+printf '\n%s\n\n' "PUSHING TO SERVER:"
+
 ssh server "cd /builds/wildefyr.net && git pull && ./ports.sh clean; ./ports.sh"
