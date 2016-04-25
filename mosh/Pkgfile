@@ -14,6 +14,7 @@ build() {
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/$branch
+		git clean -q -d -f
 	else
 		git clone https://github.com/mobile-shell/mosh -b $branch $name
 	fi

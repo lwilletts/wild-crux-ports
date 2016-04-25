@@ -7,14 +7,16 @@ name=dmenu-ee
 version=git
 release=1
 source=()
+branch=master
 
 build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
-		git fetch -q; git reset --hard origin/master
+		git fetch -q; git reset --hard origin/$branch
+		git clean -q -d -f
 	else
-		git clone git://github.com/toolpunk/dmenu-ee
+		git clone git://github.com/toolpunk/dmenu-ee -b $branch $name
 		cd $name
 	fi
 

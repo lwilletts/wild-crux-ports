@@ -13,6 +13,7 @@ build() {
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
+		git clean -q -d -f
 	else
 		git clone https://github.com/neovim/libvterm $name
 		cd $name

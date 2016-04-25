@@ -14,6 +14,7 @@ build () {
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
+		git clean -q -d -f
 	else
 		git clone git://github.com/mpv-player/mpv $name
 		cd $name

@@ -15,6 +15,7 @@ build() {
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/$branch
+		git clean -q -d -f
 	else
 		git clone https://git.kernel.org/pub/scm/network/connman/connman -b $branch $name
 		cd $name

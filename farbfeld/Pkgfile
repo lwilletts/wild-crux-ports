@@ -14,6 +14,7 @@ build() {
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/$branch
+		git clean -q -d -f
 	else
 		git clone http://git.suckless.org/farbfeld -b $branch $name
 		cd $name
