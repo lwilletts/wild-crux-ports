@@ -1,9 +1,9 @@
-# Description: Simple terminal.
-# URL:         http://st.suckless.org/
+# Description: Simple terminal fork.
+# URL:         https://github.com/neeasade/xst
 # Packager:    wildefyr, me at wildefyr dot net
 # Depends on:  xorg-libx11
 
-name=st
+name=xst
 version=git
 release=1
 source=()
@@ -15,10 +15,10 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard $branch
 	else
-		git clone https://github.com/neeasade/shit -b $branch $name
+		git clone https://github.com/neeasade/xst -b $branch $name
 		cd $name
 	fi
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
 }
