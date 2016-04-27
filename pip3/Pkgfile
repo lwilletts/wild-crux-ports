@@ -14,4 +14,7 @@ build() {
 	python3 setup.py install \
 					 --prefix=/usr \
 					 --root=$PKG
+
+	# lets not override opt's python2 pip
+	rm -f $PKG/usr/bin/pip
 }
