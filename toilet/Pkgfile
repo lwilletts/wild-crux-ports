@@ -1,0 +1,20 @@
+# Description: Free replacement for figlet.
+# URL:         http://libcaca.zoy.org/wiki/toilet
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:  libcaca
+
+name=toilet
+version=0.3
+release=1
+source=(http://caca.zoy.org/raw-attachment/wiki/toilet/toilet-${version}.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+				--bindir=/usr/bin \
+				--mandir=/usr/share/man
+
+	make
+	make DESTDIR=$PKG install
+}
