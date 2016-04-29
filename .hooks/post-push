@@ -1,9 +1,9 @@
 #/bin/sh
 
-rm -rf /builds/wildefyr.net/ports
-rsync -aq /usr/ports/wildefyr/* /builds/wildefyr.net/ports
+rm -rf /builds/fyrious.ninja/ports
+rsync -aq /usr/ports/wildefyr/* /builds/fyrious.ninja/ports
 
-cd /builds/wildefyr.net
+cd /builds/fyrious.ninja
 
 printf '\n'
 printf '%s\n' "Generate updated portspage:"
@@ -23,4 +23,4 @@ git push
 
 printf '\n%s\n\n' "PUSHING TO SERVER:"
 
-ssh server "cd /builds/wildefyr.net && git pull && ./ports.sh clean; ./ports.sh"
+ssh fyrious "cd /builds/fyrious.ninja && git pull && ./ports.sh clean; ./ports.sh"
