@@ -4,7 +4,7 @@
 # Depends on:
 
 name=teamspeak
-version=3.0.19
+version=3.0.19.1
 release=1
 source=(http://teamspeak.gameserver.gamed.de/ts3/releases/$version/TeamSpeak3-Client-linux_amd64-$version.run
 		teamspeak3.desktop
