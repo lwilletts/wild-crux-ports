@@ -21,6 +21,6 @@ git add ports/
 git commit -m 'ports: latest'
 git push
 
-printf '\n%s\n\n' "PUSHING TO SERVER:"
+printf '\n%s\n\n' "PULLING CHANGES ON TO SERVER:"
 
 ssh fyrious "cd /builds/fyrious.ninja && git pull && ./ports.sh clean; ./ports.sh"
