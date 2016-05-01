@@ -1,0 +1,20 @@
+# Description: Manipulate partition tables.
+# URL:         https://www.gnu.org/software/parted/
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:
+
+name=parted
+version=3.2
+release=1
+source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+				--bindir=/usr/bin \
+				--mandir=/usr/share/man
+
+	make
+	make DESTDIR=$PKG install
+}
