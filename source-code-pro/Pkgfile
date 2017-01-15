@@ -1,0 +1,29 @@
+# Description: Monospaced font family for coding environements. (git checkout)
+# URL:         https://github.com/adobe-fonts/source-code-pro
+# Maintainer:  wildefyr, me at wildefyr dot net
+# Depends on:
+
+name=source-code-pro
+version=1.050R
+release=1
+source=(https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/$version-it.tar.gz)
+
+build() {
+	cd source-code-pro-2.030R-ro-$version-it
+
+	install -Dm644 OTF/SourceCodePro-ExtraLight.otf $PKG/usr/share/fonts/X11/OTF/Source/CodePro/ExtraLight.otf
+	install -Dm644 OTF/SourceCodePro-Light.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Light.otf
+	install -Dm644 OTF/SourceCodePro-Regular.otf    $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Regular.otf
+	install -Dm644 OTF/SourceCodePro-Medium.otf     $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Medium.otf
+	install -Dm644 OTF/SourceCodePro-Bold.otf       $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Bold.otf
+	install -Dm644 OTF/SourceCodePro-Semibold.otf   $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Semibold.otf
+	install -Dm644 OTF/SourceCodePro-Black.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Black.otf
+
+	install -Dm644 OTF/SourceCodePro-ExtraLightIt.otf $PKG/usr/share/fonts/X11/OTF/Source/CodePro/ExtraLightItalic.otf
+	install -Dm644 OTF/SourceCodePro-LightIt.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/LightItalic.otf
+	install -Dm644 OTF/SourceCodePro-It.otf           $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Italic.otf
+	install -Dm644 OTF/SourceCodePro-MediumIt.otf     $PKG/usr/share/fonts/X11/OTF/Source/CodePro/MediumItalic.otf
+	install -Dm644 OTF/SourceCodePro-BoldIt.otf       $PKG/usr/share/fonts/X11/OTF/Source/CodePro/BoldItalic.otf
+	install -Dm644 OTF/SourceCodePro-SemiboldIt.otf   $PKG/usr/share/fonts/X11/OTF/Source/CodePro/SemiboldItalic.otf
+	install -Dm644 OTF/SourceCodePro-BlackIt.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/BlackItalic.otf
+}
