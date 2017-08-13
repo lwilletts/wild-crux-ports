@@ -1,0 +1,5 @@
+# collection fyr, https://github.com/lwilletts/wild-crux-ports
+
+NAME=fyr
+URL=https://github.com/lwilletts/wild-crux-ports
+BRANCH=master
